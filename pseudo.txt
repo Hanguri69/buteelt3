@@ -1,0 +1,33 @@
+Эхлэх 
+
+FUNCTION read_employees(файлийн зам)
+	TRY
+	    READ мөр мөрөөр бүх өгөгдлийг уншина 
+	    PRINT "амжилттай уншлаа"
+            RETURN Өгөгдөл
+	EXCEPT файл олдоогүй тохиолдолд 
+	    PRINT "Error: файлийн зам олдсонгүй"
+	     RETURN хоосон жагсаалт
+FUNCTION write_employees(файлийн зам, ажилчид өгөгдөл)
+    WRITE ажилчдыг файлд бичнэ
+    PRINT "файлийн замд амжилттай бичигдлээ"
+
+FUNCTION main()
+    
+    ажилчдын бүх мэдээлэл = read_employees(" employees1.txt зам")
+    write_employees("darkhan_database1.txt, employees өгөгдөл)
+    write_employees("employee1.txt, [])
+    darkhan_employees = read_employees("darkhan_database1.txt")
+    тэтгэвэрт гараагүй ажилчид= []
+    for darkhan_employees{ажилчид 0.....ажилчид n} do
+	if ажилтанТөлөв != "тэтгэвэрт гарсан" 
+	 тэтгэвэрт гараагүй ажилчид[] оруулах
+	
+    IF тэтгэвэрт гараагүй ажилчид != null
+        write_employees(" employees1.txt", тэтгэвэрт гараагүй ажилчид[])
+     for darkhan_employees{ажилчид 0.....ажилчид n} do
+	if ажилтанТөлөв == "тэтгэвэрт гарсан" 
+        write_employees(" darkhan_database1.txt", тэтгэвэрт гарсан ажилчдыг хийнэ )
+
+    CALL main()
+6.ДУУСАХ.
